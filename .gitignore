@@ -31,3 +31,11 @@ bin/
 
 java-great-again.iml
 .idea/
+
+### Build ###
+target/
+*.class
+*.jar
+*.war
+*.ear
+.DS_Store
