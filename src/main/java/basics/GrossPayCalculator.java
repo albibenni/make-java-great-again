@@ -22,14 +22,10 @@ public class GrossPayCalculator {
             IO.println("Invalid input. Please enter a numeric value.");
             return;
         }
-        // Step 2: Assign values to the variables
-        hourlyRate = 15.50; // Example: $15.50 per hour
+        hourlyRate = 15.50;
 
-        // Step 3: Calculate gross pay
         grossPay = Double.parseDouble(hours) * hourlyRate;
-
-        // Step 4: Display the result
-        IO.println("Gross Pay: $" + grossPay);
+        IO.println("Gross Pay: " + grossPay);
     }
 
     public static boolean isNumeric(String str) {
