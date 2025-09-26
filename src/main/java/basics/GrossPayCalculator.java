@@ -1,23 +1,21 @@
-package main.java.basics;
-
+package basics;
 
 public class GrossPayCalculator {
     public static void main(String[] args) {
         // Step 1: Declare the variables
-        int hoursWorked;
         double hourlyRate;
         double grossPay;
 
         IO.println("How many hours did you work?");
         String hours = IO.readln();
         /*
-         BEFORE java 25
-         Scanner scannaer = new Scanner(System.in);
-         //String hours = scanner.nextLine();
-         or int hoursWorked = scanner.nextInt();
-         or double hoursWorked = scanner.nextDouble();
-         scanner.close();
-        */
+         * BEFORE java 25
+         * Scanner scannaer = new Scanner(System.in);
+         * //String hours = scanner.nextLine();
+         * or int hoursWorked = scanner.nextInt();
+         * or double hoursWorked = scanner.nextDouble();
+         * scanner.close();
+         */
         if (!isNumeric(hours.trim())) {
             IO.println("Invalid input. Please enter a numeric value.");
             return;
@@ -37,4 +35,3 @@ public class GrossPayCalculator {
         }
     }
 }
-
