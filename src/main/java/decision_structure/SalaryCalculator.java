@@ -10,6 +10,7 @@ public class SalaryCalculator {
         IO.println("How many sales did the empl. get");
         Scanner scanner = new Scanner(System.in);
         int sales = scanner.nextInt();
+        scanner.close();
         if (sales >= quota)
             salary += bonus;
         IO.println("Salary is: " + salary);
